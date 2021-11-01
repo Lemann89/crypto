@@ -1,0 +1,19 @@
+@import 'src/styles/variables';
+
+.stats__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid $gray-border;
+  font-size: 16px;
+
+  &-key {
+    color: $gray-text;
+    font-weight: 500;
+  }
+
+  &-value {
+    font-weight: 600;
+  }
+}

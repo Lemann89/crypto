@@ -1,0 +1,27 @@
+.crypto__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.crypto__search {
+  .MuiOutlinedInput-root {
+    border-radius: 8px;
+  }
+
+  input {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .crypto__header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .crypto__search {
+    margin-top: 20px !important;
+  }
+}

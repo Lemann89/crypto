@@ -1,0 +1,50 @@
+@import 'src/styles/variables';
+
+.stats-card {
+  border-radius: 16px;
+  padding: 35px;
+  border: 1px solid $gray-border;
+  box-shadow: 0 0 8px rgba(191, 191, 224, 0.25);
+  display: flex;
+  align-items: center;
+  width: 320px;
+
+  &__icon {
+    margin-right: 30px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 15px;
+    font-weight: 500;
+    color: $white;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 26px;
+    color: $white;
+  }
+
+  &--red {
+    background: linear-gradient(180deg, #f44881, #ec454f);
+  }
+
+  &--yellow {
+    background: linear-gradient(0deg, #f19a1a, #ffc73c);
+  }
+
+  &--blue {
+    background: linear-gradient(180deg, #21c8f6, #637bff);
+  }
+
+  &--violet {
+    background: linear-gradient(0deg, #8b60ed, #b372bd);
+  }
+}

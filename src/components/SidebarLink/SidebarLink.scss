@@ -1,0 +1,25 @@
+@import 'src/styles/variables';
+
+.sidebar-link {
+  text-decoration: none;
+  display: flex;
+  padding: 18px 24px;
+  margin-bottom: 15px;
+  color: $black;
+  border-radius: 12px;
+
+  &--active {
+    background: #0098fc;
+    color: $white;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__icon {
+    color: inherit;
+    margin-right: 10px;
+  }
+}

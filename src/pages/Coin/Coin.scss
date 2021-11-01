@@ -1,0 +1,133 @@
+@import 'src/styles/variables';
+
+.coin {
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+  }
+
+  &__symbol {
+    margin-top: 5px;
+    margin-left: 12px;
+    font-weight: 600;
+    color: $gray-text;
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__select {
+    width: 150px;
+
+    .MuiOutlinedInput-root {
+      border-radius: 8px;
+    }
+
+    .MuiSelect-select {
+      padding: 10px;
+    }
+  }
+
+  &__price {
+    margin-top: 5px;
+    font-weight: 500;
+    color: $black;
+    margin-left: 15px;
+  }
+
+  &__change {
+    margin-top: 5px;
+    font-weight: 500;
+    margin-left: 15px;
+    color: #4bdbb0;
+
+    &--negative {
+      color: #dc3535;
+    }
+  }
+
+  &__info {
+    margin-top: 40px;
+  }
+
+  &__description {
+    color: #333;
+
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid $gray-border;
+    font-size: 16px;
+
+    &-key {
+      color: $gray-text;
+      font-weight: 500;
+    }
+
+    &-value {
+      font-weight: 600;
+    }
+  }
+
+  &__columns {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__column {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .coin__head {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .coin__name {
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .coin__columns {
+    flex-direction: column;
+  }
+
+  .coin__column {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
